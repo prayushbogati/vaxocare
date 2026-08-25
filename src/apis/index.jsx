@@ -1,7 +1,7 @@
 // Centralized API client for the frontend.
 // Supports JWT auth + consistent JSON/error handling.
 
-const BASE_URL = import.meta.env.BACKEND_URL || "http://localhost:5000";
+const BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const getToken = () => localStorage.getItem("token");
 
